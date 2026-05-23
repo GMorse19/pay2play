@@ -1,8 +1,9 @@
 import './App.css';
 
 function App() {
-  const base = import.meta.env.BASE_URL;
-  const bannerImage = `${base}images/p2p_banner1.png`;
+  const bannerImage = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
+  // const base = import.meta.env.BASE_URL;
+  // const bannerImage = `${base}images/p2p_banner1.png`;
 
   return (
     <main className="site">
