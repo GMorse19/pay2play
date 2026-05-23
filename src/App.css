@@ -10,6 +10,10 @@
   --muted: #c9c9c9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--black);
@@ -40,7 +44,7 @@ a {
   overflow: hidden;
   background:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
-    url('/images/p2p_background.png');
+    var(--hero-bg);
   background-size: cover;
   background-position: center;
 }
@@ -53,6 +57,13 @@ a {
     radial-gradient(circle at center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.92)),
     linear-gradient(90deg, rgba(0, 0, 0, 0.85), transparent, rgba(0, 0, 0, 0.85));
   z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .heroContent {
@@ -179,9 +190,8 @@ p {
   border: 1px solid rgba(195, 22, 22, 0.45);
   border-radius: 24px;
   padding: 34px;
-background:
-  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
-  var(--hero-bg);
+  background:
+    linear-gradient(145deg, rgba(195, 22, 22, 0.18), rgba(0, 0, 0, 0.5));
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 

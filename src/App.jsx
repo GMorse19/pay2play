@@ -1,21 +1,19 @@
 import './App.css';
 
 function App() {
-  // const bannerImage = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
-  // const base = import.meta.env.BASE_URL;
-  // const bannerImage = `${base}images/p2p_banner1.png`;
+  const bannerImage = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
 
   return (
     <main className="site">
       <section
-  className="hero"
-  // style={{ "--hero-bg": `url(${bannerImage})` }}
->
+        className="hero"
+        style={{ "--hero-bg": `url(${bannerImage})` }}
+      >
         <div className="heroOverlay"></div>
 
         <div className="heroContent">
           <img
-            src='images/p2p_banner1.png'
+            src={bannerImage}
             alt="Pay To Play documentary title"
             className="heroLogo"
           />
@@ -25,19 +23,35 @@ function App() {
           </p>
 
           <div className="buttonGroup">
-            <a href="https://www.youtube.com/@pay2playboston" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.youtube.com/@pay2playboston"
+              target="_blank"
+              rel="noreferrer"
+            >
               YouTube
             </a>
 
-            <a href="https://www.tiktok.com/@pay.2.play6" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.tiktok.com/@pay.2.play6"
+              target="_blank"
+              rel="noreferrer"
+            >
               TikTok
             </a>
 
-            <a href="https://x.com/pay2playmovie" target="_blank" rel="noreferrer">
+            <a
+              href="https://x.com/pay2playmovie"
+              target="_blank"
+              rel="noreferrer"
+            >
               X
             </a>
 
-            <a href="https://www.facebook.com/profile.php?id=61590263854777" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/profile.php?id=61590263854777"
+              target="_blank"
+              rel="noreferrer"
+            >
               Facebook
             </a>
           </div>
@@ -49,10 +63,11 @@ function App() {
           <h1>Pay To Play</h1>
 
           <p>
-            <strong>Pay To Play</strong> explores the struggle, sacrifice, humor, frustration,
-            and energy behind independent music. Built from documentary footage captured
-            throughout Boston and surrounding areas from 2004 to 2009, the film looks back at
-            a scene before social media reshaped how bands were seen, heard, and remembered.
+            <strong>Pay To Play</strong> explores the struggle, sacrifice, humor,
+            frustration, and energy behind independent music. Built from documentary
+            footage captured throughout Boston and surrounding areas from 2004 to
+            2009, the film looks back at a scene before social media reshaped how
+            bands were seen, heard, and remembered.
           </p>
         </div>
       </section>
@@ -85,8 +100,8 @@ function App() {
           <h2>Were you part of the scene?</h2>
 
           <p>
-            If you played in a band, booked shows, filmed footage, made flyers, ran sound,
-            or were simply there, we’d love to hear from you.
+            If you played in a band, booked shows, filmed footage, made flyers,
+            ran sound, or were simply there, we’d love to hear from you.
           </p>
 
           <a className="emailButton" href="mailto:youremail@example.com">
