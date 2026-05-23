@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #c31616;
+  --dark-red: #5c0505;
+  --black: #050505;
+  --soft-white: #f2f2f2;
+  --muted: #c9c9c9;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--soft-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.site {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(195, 22, 22, 0.22), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(195, 22, 22, 0.3), transparent 40%),
+    #050505;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
+    url('/images/pay-to-play-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.92)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85), transparent, rgba(0, 0, 0, 0.85));
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  width: min(980px, 100%);
+  text-align: center;
+}
+
+.heroLogo {
+  width: min(900px, 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto 24px;
+  filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.8));
+}
+
+.tagline {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  color: #e8e8e8;
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  line-height: 1.5;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.buttonGroup a,
+.emailButton {
+  display: inline-block;
+  min-width: 150px;
+  padding: 14px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(195, 22, 22, 0.82);
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.buttonGroup a:hover,
+.emailButton:hover {
+  transform: translateY(-2px);
+  background: #e01c1c;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+  padding: 82px 22px;
+}
+
+.container {
+  width: min(1050px, 100%);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 18px;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  color: var(--red);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--soft-white);
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: white;
+}
+
+p {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.intro {
+  background:
+    linear-gradient(180deg, #050505, #100202);
+  text-align: center;
+}
+
+.intro p {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ARCHIVE SECTION */
+
+.archive {
+  background:
+    radial-gradient(circle at top right, rgba(195, 22, 22, 0.26), transparent 34%),
+    #0b0b0b;
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid rgba(195, 22, 22, 0.45);
+  border-radius: 24px;
+  padding: 34px;
+  background:
+    linear-gradient(145deg, rgba(195, 22, 22, 0.18), rgba(0, 0, 0, 0.5));
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.card p {
+  margin: 0 0 14px;
+  font-size: 2rem;
+  color: var(--red);
+  font-weight: 900;
+}
+
+.card span {
+  color: #e4e4e4;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+  background:
+    linear-gradient(180deg, #0b0b0b, #050505);
+}
+
+.contact p {
+  max-width: 760px;
+  margin: 0 auto 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 78vh;
+    padding: 36px 18px;
+  }
+
+  .heroLogo {
+    margin-bottom: 20px;
+  }
+
+  .buttonGroup {
+    display: grid;
+    width: min(360px, 100%);
+    margin: 0 auto;
+  }
+
+  .buttonGroup a,
+  .emailButton {
+    width: 100%;
+  }
+
+  .section {
+    padding: 62px 20px;
+  }
+
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 26px;
+  }
+}
