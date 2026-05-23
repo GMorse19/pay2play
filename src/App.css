@@ -40,7 +40,7 @@ a {
   overflow: hidden;
   background:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
-    url('/images/pay-to-play-banner.png');
+    url('/images/p2p_background.png');
   background-size: cover;
   background-position: center;
 }
@@ -179,8 +179,9 @@ p {
   border: 1px solid rgba(195, 22, 22, 0.45);
   border-radius: 24px;
   padding: 34px;
-  background:
-    linear-gradient(145deg, rgba(195, 22, 22, 0.18), rgba(0, 0, 0, 0.5));
+background:
+  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
+  var(--hero-bg);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
