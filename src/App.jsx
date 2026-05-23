@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-  const bannerImage = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
+  // const bannerImage = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
   // const base = import.meta.env.BASE_URL;
   // const bannerImage = `${base}images/p2p_banner1.png`;
 
@@ -9,13 +9,13 @@ function App() {
     <main className="site">
       <section
   className="hero"
-  style={{ "--hero-bg": `url(${bannerImage})` }}
+  // style={{ "--hero-bg": `url(${bannerImage})` }}
 >
         <div className="heroOverlay"></div>
 
         <div className="heroContent">
           <img
-            src={bannerImage}
+            src='images/p2p_banner1.png'
             alt="Pay To Play documentary title"
             className="heroLogo"
           />
