@@ -221,6 +221,32 @@ p {
   margin: 0 auto 30px;
 }
 
+.text-box {
+  position: relative;
+  color: #ffffff;
+  padding: 3rem 2.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+  background:
+    radial-gradient(
+      /* ellipse at center, */
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.78) 38%,
+      rgba(0, 0, 0, 0.68) 48%,
+      rgba(0, 0, 0, 0.58) 58%,
+      rgba(0, 0, 0, 0.05) 68%,
+      transparent 100%
+    );
+}
+
+.text-box h2,
+.text-box p {
+  color: #ffffff;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 1),
+    0 0 22px rgba(0, 0, 0, 0.9);
+}
+
 /* MOBILE */
 
 @media (max-width: 760px) {
@@ -254,5 +280,9 @@ p {
 
   .card {
     padding: 26px;
+  }
+
+   .text-box {
+    padding: 2rem 1.25rem;
   }
 }

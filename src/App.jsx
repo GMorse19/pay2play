@@ -1,9 +1,11 @@
 import './App.css';
 
 function App() {
-  const bannerImage = `${import.meta.env.BASE_URL}images/gritty.png`;
+  const bannerImage = `${import.meta.env.BASE_URL}images/gritty2.png`;
+  // const bannerImage2 = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
   const backgroundImage = `${import.meta.env.BASE_URL}images/jamspace.png`;
   const backgroundImage2 = `${import.meta.env.BASE_URL}images/collage.png`;
+  const backgroundImage3 = `${import.meta.env.BASE_URL}images/dollar.jpg`;
 
   return (
     <main className="site">
@@ -20,11 +22,47 @@ function App() {
             className="heroLogo"
           />
 
-          <p className="tagline">
-            A documentary about independent music in and around Boston, filmed between 2004 and 2009.
-          </p>
+        </div>
+      </section>
 
-          <div className="buttonGroup">
+      <section
+        className="hero"
+        style={{ "--hero-bg": `url(${backgroundImage3})` }}
+      >
+        <div className="container text-box">
+          <p>
+            <strong>Pay To Play</strong> explores the struggle, sacrifice, humor,
+            frustration, and energy behind independent music. Built from documentary
+            footage captured throughout Boston and surrounding areas in the early 2000s, 
+            the film looks back at a scene before social media reshaped how
+            bands were seen, heard, and remembered.
+          </p>
+          <br></br>
+          <p>
+          At its core, Pay to Play asks a simple question: <br></br>
+          Why do independent musicians keep going when the odds are stacked against them?<br></br><br></br>
+          For many local bands, making music means balancing creative ambition with real-world limitations. 
+          Recording, booking shows, promoting events, selling merch, and finding an audience all require time, 
+          money, and persistence. Most artists are not chasing fame. They are trying to be heard. <br></br><br></br>
+          Pay to Play captures that struggle and celebrates the commitment behind it.
+          </p>
+        </div>
+      </section>
+
+      <section className="section archive">
+        <div className="container twoColumn">
+          <div>
+            <h2>From the Archive</h2>
+
+            <p>
+              While the feature documentary is being edited, unused clips, raw footage,
+              interviews, venue moments, and performance excerpts will be released online.
+            </p>
+
+            <p>
+              Follow along for rare footage from Boston’s independent music scene.
+            </p>
+            <div className="buttonGroup">
             <a
               href="https://www.youtube.com/@pay2playboston"
               target="_blank"
@@ -57,41 +95,11 @@ function App() {
               Facebook
             </a>
           </div>
-        </div>
-      </section>
-
-      <section className="section intro">
-        <div className="container">
-          <h1>Pay To Play</h1>
-
-          <p>
-            <strong>Pay To Play</strong> explores the struggle, sacrifice, humor,
-            frustration, and energy behind independent music. Built from documentary
-            footage captured throughout Boston and surrounding areas from 2004 to
-            2009, the film looks back at a scene before social media reshaped how
-            bands were seen, heard, and remembered.
-          </p>
-        </div>
-      </section>
-
-      <section className="section archive">
-        <div className="container twoColumn">
-          <div>
-            <h2>From the Archive</h2>
-
-            <p>
-              While the feature documentary is being edited, unused clips, raw footage,
-              interviews, venue moments, and performance excerpts will be released online.
-            </p>
-
-            <p>
-              Follow along for rare footage from Boston’s independent music scene.
-            </p>
           </div>
 
           <div className="card">
             <h3>Boston Independent Music</h3>
-            <p>2004–2009</p>
+            <p>2001–2009</p>
             <span>Clips • Interviews • Performances • Stories</span>
           </div>
         </div>
