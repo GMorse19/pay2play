@@ -43,7 +43,7 @@ a {
   padding: 48px 20px;
   overflow: hidden;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
+    /* linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)), */
     var(--hero-bg);
   background-size: cover;
   background-position: center;

@@ -1,13 +1,15 @@
 import './App.css';
 
 function App() {
-  const bannerImage = `${import.meta.env.BASE_URL}images/p2p_banner1.png`;
+  const bannerImage = `${import.meta.env.BASE_URL}images/gritty.png`;
+  const backgroundImage = `${import.meta.env.BASE_URL}images/jamspace.png`;
+  const backgroundImage2 = `${import.meta.env.BASE_URL}images/collage.png`;
 
   return (
     <main className="site">
       <section
         className="hero"
-        style={{ "--hero-bg": `url(${bannerImage})` }}
+        style={{ "--hero-bg": `url(${backgroundImage})` }}
       >
         <div className="heroOverlay"></div>
 
@@ -94,17 +96,21 @@ function App() {
           </div>
         </div>
       </section>
-
+      <section
+        className="hero"
+        style={{ "--hero-bg": `url(${backgroundImage2})` }}
+        >
+        </section>
       <section className="section contact">
         <div className="container">
           <h2>Were you part of the scene?</h2>
 
           <p>
             If you played in a band, booked shows, filmed footage, made flyers,
-            ran sound, or were simply there, we’d love to hear from you.
+            ran sound, were simply there, or maybe even ran into us, we’d love to hear from you.
           </p>
 
-          <a className="emailButton" href="mailto:youremail@example.com">
+          <a className="emailButton" href="mailto:pay2playboston@gmail.com">
             Contact the Film
           </a>
         </div>
