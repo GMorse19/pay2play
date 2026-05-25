@@ -1,10 +1,10 @@
 import './App.css';
 
 function App() {
-  const bannerImage = `${import.meta.env.BASE_URL}images/gritty2.png`;
-  const backgroundImage = `${import.meta.env.BASE_URL}images/jamspace.png`;
-  const backgroundImage2 = `${import.meta.env.BASE_URL}images/collage.png`;
-  const backgroundImage3 = `${import.meta.env.BASE_URL}images/dollar.jpg`;
+  const bannerImage = `${import.meta.env.BASE_URL}images/gritty2.webp`;
+  const backgroundImage = `${import.meta.env.BASE_URL}images/jamspace.webp`;
+  const backgroundImage2 = `${import.meta.env.BASE_URL}images/collage.webp`;
+  const backgroundImage3 = `${import.meta.env.BASE_URL}images/dollar.webp`;
 
   return (
     <main className="site">
