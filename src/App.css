@@ -230,11 +230,11 @@ p {
   background:
     radial-gradient(
       /* ellipse at center, */
-      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.88) 50%,
       rgba(0, 0, 0, 0.78) 38%,
       rgba(0, 0, 0, 0.68) 48%,
       rgba(0, 0, 0, 0.58) 58%,
-      rgba(0, 0, 0, 0.05) 68%,
+      rgba(0, 0, 0, 0.01) 68%,
       transparent 100%
     );
 }
@@ -243,8 +243,9 @@ p {
 .text-box p {
   color: #ffffff;
   text-shadow:
-    0 2px 8px rgba(0, 0, 0, 1),
-    0 0 22px rgba(0, 0, 0, 0.9);
+    1px 1px 1px rgba(0, 0, 0, 1),
+    2px 2px 2px rgba(0, 0, 0, 0.95),
+    0 0 8px rgba(0, 0, 0, 0.9);
 }
 
 .srOnly {
